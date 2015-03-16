@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Baby Shower</title>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<!-- Audio Player CSS & Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/mediaelement-and-player.min.js"></script>
+<link rel="stylesheet" href="css/style.css" media="screen">
+
+<link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
+<link rel="stylesheet" type="text/css" href="enhanced.css" media="screen  and (min-width: 40.5em)" />
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link rel="stylesheet" type="text/css" href="enhanced.css" />
+<![endif]-->
+
+<!-- end Audio Player CSS & Scripts -->
+
+<style type="text/css">
+/*
+		html, body { margin: 0;	padding: 0; }
+		body { padding: 260px; background: #f2f2f2 url(img/bg.png) no-repeat top center; }
+		.audio-player { margin: 0 auto;} */
+
+</style>
+
+</head>
+
+<body>
+	<div id="contenedor">
+		<div id="carta">
+	  	</div>
+	  	<div id="cartaCerrada">
+	    </div>
+	    <div id="cartaAbierta">
+	    </div>
+	    <div id="fondoCarta">
+	    </div>
+	    <div id="tapaAbajo">
+	    </div>
+	    <div id="tapaArriba">
+	    </div>
+	    <div id="origamiazul">
+    	</div>
+    	<div id="globos">
+    	</div>
+		<div id="ciguena">
+    	</div>
+    	<div id="tarjeta">
+    	</div>
+    	<div id="ciguenah">
+    	</div>
+    	<div id="cinta">
+    	</div>
+    	<div id="enlace">
+    		Si no lo ves correctamentamente haz <a  style="cursor: pointer;" href="imagenes/tarjeta.png"> clic aquí</a>
+    	</div>
+    	<div id="colashuno">
+    	</div>
+    	<div id="colashdos">
+    	</div>
+    	<div id="Sugerencia">
+    		Sugerencia de regalos<a  style="cursor: pointer;" href="imagenes/lista_regalos.png"> clic aquí</a>
+    	</div>
+	</div>
+
+	<!-- Audio Player HTML -->
+	<div class="audio-player">
+		<!--<h1>Demo - Preview Song</h1>
+		 <img class="cover" src="img/cover.png" alt=""> -->
+		<audio id="audio-player" src="media/bb.mp3" type="audio/mp3" controls="controls" autoplay></audio>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			$('#audio-player').mediaelementplayer({
+				alwaysShowControls: true,
+				features: ['playpause','volume','progress'],
+				audioVolume: 'horizontal',
+				audioWidth: 400,
+				audioHeight: 120
+			});
+		});
+	</script>
+	<!-- end Audio Player HTML -->
+
+</body>
+</html>
